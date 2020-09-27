@@ -40,12 +40,12 @@ void run_palindrome() {
     std::string user_string;
     char cont;
 
-    std::cout << "Enter a string, and I'll tell you if it's a palindrome: ";
+    std::cout << "Enter a word, and I'll tell you if it's a palindrome: ";
     std::cin >> user_string;
 
     std::cout << std::setw(8) << std::left << is_palindrome(user_string) << user_string << std::endl;
 
-    std::cout << "\nWould you like to ender another string? (Y/N): ";
+    std::cout << "\nWould you like to enter another word? (Y/N): ";
     std::cin >> cont;
     std::cout << std::endl;
 
