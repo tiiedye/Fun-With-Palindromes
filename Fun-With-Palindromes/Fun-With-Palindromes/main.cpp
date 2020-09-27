@@ -36,6 +36,28 @@ bool is_palindrome(const std::string& s) {
     return true;
 }
 
+void run_palindrome() {
+    std::string user_string;
+    char cont;
+
+    std::cout << "Enter a string, and I'll tell you if it's a palindrome: ";
+    std::cin >> user_string;
+
+    std::cout << std::setw(8) << std::left << is_palindrome(user_string) << user_string << std::endl;
+
+    std::cout << "\nWould you like to ender another string? (Y/N): ";
+    std::cin >> cont;
+    std::cout << std::endl;
+
+    if (std::toupper(cont) == 'Y') {
+        run_palindrome();
+    } else if (std::toupper(cont) == 'N') {
+        std::cout << "Goodbye!" << std::endl;
+    } else {
+        std::cout << "Unknown selection. Terminating Program. Goodbye!" << std::endl;
+    }
+}
+
 int main() {
     std::vector<std::string> test_strings{ "a", "aa", "aba", "abba", "abbcbba", "ab", "abc", "radar", "bob", "ana",
         "avid diva", "Amore, Roma", "A Toyota's a toyota", "A Santa at NASA", "C++",
@@ -47,5 +69,8 @@ int main() {
         std::cout << std::setw(8) << std::left << is_palindrome(s) << s << std::endl;
     }
     std::cout << std::endl;
+
+    run_palindrome();
+
     return 0;
 }
