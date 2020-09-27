@@ -1,7 +1,8 @@
 ![made-with-VisualStudio](https://img.shields.io/badge/Made%20With-Visual%20Studio-ba88f3)  ![Using-CPlusPlus](https://img.shields.io/badge/Using-C%2B%2B-ff69b4)
 
 # Fun-With-Palindromes
-...
+a simple CLI program that uses deques to sort through a string to determine if the string is a palindrome or not. 
+There is a vector with test cases as well as a user interface that allows for users to input their own test strings.
 
 <img src="./assets/screenshot.png"
      alt="Img"
